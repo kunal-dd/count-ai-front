@@ -1,6 +1,6 @@
 import { InventoryItem, SupplierOrder, Supplier, ChangeLogEntry } from "./data"
 
-const API_BASE_URL = "http://localhost:2930"
+const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:2930"
 
 export const api = {
   // Inventory
